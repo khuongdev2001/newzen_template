@@ -1,0 +1,25 @@
+{
+  "logo": "/images/logo.png",
+  "description": "Build your next Vue.js application with confidence using Nuxt. An open source framework under MIT license that makes web development simple and powerful.",
+  "sections": [
+    {
+      "title": "Main Pages",
+      "links": [
+        {
+          "link": "/",
+          "text": "Home"
+        },
+        {
+          "link": "/blog",
+          "text": "Blog"
+        }
+      ]
+    }
+  ],
+  "copyright": "MyCompany, All rights reserved!",
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    }
+  }
+}

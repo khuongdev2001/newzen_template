@@ -14,17 +14,17 @@ content_blocks:
         color: '#F9D1BF'
         title: Nails Special
 
-      - image: /images/home/service-1.png
-        image_alt: 
-        color: '#E2E1E1'
-        title: Spa Special
-
-      - image: /images/home/service-1.png
+      - image: /images/home/service-2.png
         image_alt: 
         color: '#000'
         title: Special Offers
 
-      - image: /images/home/service-1.png
+      - image: /images/home/service-3.png
+        image_alt: 
+        color: '#E2E1E1'
+        title: Spa Special
+
+      - image: /images/home/service-4.png
         image_alt: 
         color: '#F9D1BF'
         title: Massage

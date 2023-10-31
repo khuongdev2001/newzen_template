@@ -69,4 +69,16 @@ html {
   font-family: 'Calibri', sans-serif;
   font-size: 22px;
   display: inline-block;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 640px) {
+  .section-content {
+    .title {
+      .divider {
+        width: 51px;
+      }
+    }
+
+  }
 }

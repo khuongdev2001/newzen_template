@@ -1,8 +1,8 @@
 <template>
   <section class="bg-white mt-[120px] relative" :data-cms-bind="dataBinding">
-    <img src="/images/home/nails-special.png" alt="">
+    <img src="/images/home/nails-special.png" alt="" class="h-[700px] sm:h-auto object-cover">
     <div class="container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-      <div class="grid grid-cols-2 items-center">
+      <div class="grid sm:grid-cols-2 items-center">
         <div class="section-content">
           <h2 class="title">
             Nails Special

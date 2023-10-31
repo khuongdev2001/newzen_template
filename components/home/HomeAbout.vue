@@ -1,15 +1,15 @@
 <template>
   <section class="bg-white pt-[120px]" :data-cms-bind="dataBinding">
     <div class="container">
-      <div class="grid grid-cols-2 items-center">
+      <div class="grid sm:grid-cols-2 sm:gap-0 gap-[60px] items-center">
         <div class="sm:pr-[50px] relative">
-          <div class="border-[5px] border-[#F9D1BF] absolute top-0 left-0 w-[calc(100%-90px)] h-[calc(100%-40px)] z-[1]" />
-          <div class="pt-[40px] pl-[40px] relative z-[2]">
+          <div class="border-[5px] border-[#F9D1BF] absolute top-0 left-0 w-[calc(100%-40px)] sm:w-[calc(100%-90px)] h-[calc(100%-30px)] sm:h-[calc(100%-40px)] z-[1]" />
+          <div class="pt-[30px] sm:pt-[40px] pl-[30px] sm:pl-[40px] relative z-[2]">
             <img src="/images/home/about.png" alt="">
           </div>
         </div>
-        <div>
-          <h2 class="text-[55px] section-title">
+        <div class="section-content">
+          <h2 class="text-[55px] title">
             About Us
             <div class="divider bg-black mb-[20px]" />
           </h2>

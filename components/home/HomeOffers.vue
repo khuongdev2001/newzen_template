@@ -1,12 +1,12 @@
 <template>
   <section class="bg-white py-[120px]" :data-cms-bind="dataBinding">
-    <div class="container">
-      <div class="grid grid-cols-2">
+    <div class="sm:container">
+      <div class="grid sm:grid-cols-2">
         <div>
-          <img src="/images/home/special-offers.png" alt="">
+          <img src="/images/home/special-offers.png" alt="" class="lg:min-h-auto h-[650px] object-cover">
         </div>
-        <div class="section-content bg-black p-[40px]">
-          <div class="border-[2px] border-secondary h-full flex flex-col justify-center px-[45px]">
+        <div class="section-content bg-black p-[40px] lg:min-h-auto min-h-[650px]">
+          <div class="border-[2px] border-secondary h-full flex flex-col justify-center px-[30px] sm:px-[45px]">
             <h2 class="text-[55px] title text-white">
               Special Offers
               <div class="divider bg-white my-[20px]" />

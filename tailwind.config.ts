@@ -14,7 +14,8 @@ export default <Partial<Config>>{
       },
       colors: {
         main: 'rgb(var(--color-primary) / <alpha-value>)',
-        secondary: 'var(--color-secondary)'
+        secondary: 'var(--color-secondary)',
+        anchor: 'var(--color-anchor)'
       },
       fontSize: {
         sm: '16px'

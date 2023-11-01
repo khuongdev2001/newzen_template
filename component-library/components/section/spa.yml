@@ -2,29 +2,25 @@
 spec:
   structures:
     - content_blocks
-  label: Video Section
-  description: Video Section
+  label: Spa Special Section
+  description: Spa Special Section
   icon: "cottage"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: Video
-  image: /images/video/video-thumb.jpg
-  image_alt: Video alt
-  video_url: https://vimeo.com/45830194
+  title: Spa Special
+  subtitle: Nails Salon & Spa is always up-to-date with the latest technology and trends in the nail industry. With years of experience, we take pride in doing a great job.
+  background: '#FFE9E9'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  title:
-    comment: Enter a section title
+  title: Enter a section title
     type: string
-  image:
-    type: image
-  image_alt:
+  subtitle: Enter a section subtitle
     type: string
-  video_url:
-    type: string
+  background: Background Color of section
+    type: color
 

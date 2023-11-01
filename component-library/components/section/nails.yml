@@ -2,16 +2,16 @@
 spec:
   structures:
     - content_blocks
-  label: Home Hero Section
-  description: Home Hero Section
+  label: Nails Special Section
+  description: Nails Special Section
   icon: "cottage"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: Welcome to
-  subtitle: The Beauty Nail Art.
-  image: /images/home/home_hero_bg.png
-  image_alt: Hero image
+  title: Nails Special
+  subtitle: Nails Salon & Spa is always up-to-date with the latest technology and trends in the nail industry. With years of experience, we take pride in doing a great job.
+  image: /images/home/nails-special.png
+  image_alt: 
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -22,7 +22,7 @@ _inputs:
     type: string
   subtitle: Enter a section subtitle
     type: string
-  image: Background of section
+  image: Iamge of section
     type: image
   image_alt: 
     type: string

@@ -1,35 +1,45 @@
 <template>
-  <footer class="shadow bg-[#000] ">
-    <div class="py-10">
+  <footer class="shadow">
+    <div class="py-[120px] bg-[#E9E9E9]">
       <div class="container">
-        <div class="grid grid-cols-5 gap-6">
-          <div class="col-span-3 pr-20">
-            <NuxtLink v-if="footerData.logo" to="/" class="inline-block mb-2">
-              <img :src="footerData.logo" alt="logo" class="w-20 h-auto block">
-            </NuxtLink>
-            <div>{{ footerData.description }}</div>
+        <div class="grid sm:grid-cols-2 sm:gap-5 gap-[60px]">
+          <div>
+            <div class="mb-[80px]">
+              <div class="mb-[30px] fonts-calibri text-[30px] font-bold">{{ footerData.contact.label }}</div>
+              <div v-for="info in footerData.contact.info" :key="info.label" class="flex items-center gap-4 mb-[27px]">
+                <UIcon :name="info.icon" class="w-[20px] h-[20px]" />
+                <div class="fonts-calibri text-[20px]">{{ info.label }}</div>
+                <!-- <UIcon name="i-mdi-facebook" /> -->
+              </div>
+            </div>
+            <div>
+              <div class="mb-[30px] fonts-calibri text-[30px] font-bold">{{ footerData.follow.label }}</div>
+              <div class="flex items-center gap-5">
+                <NuxtLink v-for="info in footerData.follow.info" v-show="info.active" :key="info.link" :to="info.link">
+                  <UIcon :name="info.icon" class="w-[40px] h-[40px]" />
+                </NuxtLink>
+              </div>
+              <!-- <UIcon name="i-mdi-twitter" /> -->
+              <!-- <UIcon name="i-mdi-linkedin" /> -->
+              <!-- <UIcon name="i-mdi-google" /> -->
+              <!-- <UIcon name="i-mdi-map-marker" /> -->
+              <!-- <UIcon name="i-mdi-phone" /> -->
+              <!-- <UIcon name="i-mdi-email-outline" /> -->
+            </div>
           </div>
-          <div v-for="section in footerData.sections" :key="section.title">
-            <h3 class="font-semibold mb-1">
-              {{ section.title }}
-            </h3>
-            <nav>
-              <ul class="list-none">
-                <li v-for="item in section.links" :key="item.link">
-                  <NuxtLink :to="item.link">
-                    {{ item.text }}
-                  </NuxtLink>
-                </li>
-              </ul>
-            </nav>
+          <div>
+            <div class="mb-[30px] fonts-calibri text-[30px] font-bold">{{ footerData.location.label }}</div>
+            <!-- eslint-disable vue/no-v-html -->
+            <div class="cs-iframe" v-html="footerData.location.iframe" />
+            <!--eslint-enable-->
           </div>
         </div>
       </div>
     </div>
-    <div class="py-4 border-t">
+    <div class="border-t bg-secondary py-[60px] ">
       <div class="container">
-        <p class="text-center">
-          Copyright {{ dayjs().get('years') }} {{ footerData.copyright }}
+        <p class="text-center text-white text-xl fonts-calibri">
+          © {{ dayjs().get('years') }} {{ footerData.copyright }}
         </p>
       </div>
     </div>
@@ -41,6 +51,12 @@ import dayjs from 'dayjs';
 import footerData from '@/data/footer.json';
 </script>
 
-<style scoped>
-
+<style lang="scss">
+.cs-iframe {
+  max-width: 100% !important;
+  iframe {
+    width: 100% !important;
+    height: 350px;
+  }
+}
 </style>

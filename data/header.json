@@ -6,19 +6,19 @@
       "text": "Home"
     },
     {
-      "link": "/",
+      "link": "/about",
       "text": "About Us"
     },
     {
-      "link": "/",
+      "link": "/services",
       "text": "Services"
     },
     {
-      "link": "/",
+      "link": "/gallery",
       "text": "Gallery"
     },
     {
-      "link": "/",
+      "link": "/contact",
       "text": "Contact Us"
     }
   ],

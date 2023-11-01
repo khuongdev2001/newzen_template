@@ -3,18 +3,18 @@
     <div class="container">
       <div class="grid sm:grid-cols-2 sm:gap-0 gap-[60px] items-center">
         <div class="sm:pr-[50px] relative">
-          <div class="border-[5px] border-[#F9D1BF] absolute top-0 left-0 w-[calc(100%-40px)] sm:w-[calc(100%-90px)] h-[calc(100%-30px)] sm:h-[calc(100%-40px)] z-[1]" />
+          <div class="border-anchor border-[5px] absolute top-0 left-0 w-[calc(100%-40px)] sm:w-[calc(100%-90px)] h-[calc(100%-30px)] sm:h-[calc(100%-40px)] z-[1]" />
           <div class="pt-[30px] sm:pt-[40px] pl-[30px] sm:pl-[40px] relative z-[2]">
-            <img src="/images/home/about.png" alt="">
+            <img :src="block.image" :alt="block.image_alt">
           </div>
         </div>
         <div class="section-content">
           <h2 class="text-[55px] title">
-            About Us
+            {{ block.title }}
             <div class="divider bg-black mb-[20px]" />
           </h2>
-          <p class="text-[22px] leading-[27px] fonts-calibri mb-[20px]">Come to visit our nail salon and enjoy the comfortable relaxing moments by the leading service provided. At I-Spa Lash Nails Lounge, you are able to immerse into a cozy and luxurious space, reduce your stress of work, and forget all life’s pressure. Our valued customers will be satisfied with all services by our friendly, passionate staff. We always try our best to upgrade all services and give you the best moment.</p>
-          <NuxtLink class="custom-btn" to="#">More</NuxtLink>
+          <p class="text-[22px] leading-[27px] fonts-calibri mb-[20px]">{{ block.subtitle }}</p>
+          <NuxtLink class="custom-btn" :to="block.button.url">{{ block.button.text }}</NuxtLink>
         </div>
       </div>
     </div>

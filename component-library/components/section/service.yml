@@ -21,10 +21,10 @@ preview:
 _inputs:
   service[*]:
     title: Nails Special
-      type: string
+      type: text
     image:
       type: image
     image_alt:
-      type: string
+      type: text
     color: 
       type: color

@@ -19,10 +19,10 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   title: Enter a section title
-    type: string
+    type: text
   subtitle: Enter a section subtitle
-    type: string
+    type: text
   image: Iamge of section
     type: image
   image_alt: 
-    type: string
+    type: text

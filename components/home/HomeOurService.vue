@@ -27,7 +27,8 @@
   </section>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation } from 'swiper/modules';
 

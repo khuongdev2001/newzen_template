@@ -18,9 +18,9 @@ preview:
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
   title: Enter a section title
-    type: string
+    type: text
   subtitle: Enter a section subtitle
-    type: string
+    type: text
   background: Background Color of section
     type: color
 

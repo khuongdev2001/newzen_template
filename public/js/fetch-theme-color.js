@@ -30,14 +30,14 @@ fs.readFile('./data/theme.json', 'utf8', function(err, dataFile){
             const replacementString = dataFile.primary_color;
             replaced = replaced.replace(/\--color-primary: .*/g, ('--color-primary: ' + replacementString + ';'));
         } 
-        // if (dataFile.secondary_color) {
-        //     const replacementString = dataFile.secondary_color;
-        //     replaced = replaced.replace(/\$color-secondary: .*/g, ('$color-secondary: ' + replacementString + ';'));
-        // }         
-        // if (dataFile.anchor_color) {
-        //     const replacementString = dataFile.anchor_color;
-        //     replaced = replaced.replace(/\$color-anchor: .*/g, ('$color-anchor: ' + replacementString + ';'));
-        // } 
+        if (dataFile.secondary_color) {
+            const replacementString = dataFile.secondary_color;
+            replaced = replaced.replace(/\--color-secondary: .*/g, ('--color-secondary: ' + replacementString + ';'));
+        }         
+        if (dataFile.anchor_color) {
+            const replacementString = dataFile.anchor_color;
+            replaced = replaced.replace(/\--color-anchor: .*/g, ('--color-anchor: ' + replacementString + ';'));
+        } 
         // if (dataFile.background_effects_color) {
         //     const replacementString = dataFile.background_effects_color;
         //     replaced = replaced.replace(/\$color-background-effects: .*/g, ('$color-background-effects: ' + replacementString + ';'));

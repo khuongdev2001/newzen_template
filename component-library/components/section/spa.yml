@@ -1,0 +1,26 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Spa Special Section
+  description: Spa Special Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  title: Spa Special
+  subtitle: Nails Salon & Spa is always up-to-date with the latest technology and trends in the nail industry. With years of experience, we take pride in doing a great job.
+  background: '#FFE9E9'
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  title: Enter a section title
+    type: text
+  subtitle: Enter a section subtitle
+    type: text
+  background: Background Color of section
+    type: color
+

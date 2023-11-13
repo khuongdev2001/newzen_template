@@ -1,0 +1,30 @@
+{
+  "logo": "/images/logo.png",
+  "items": [
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "/about",
+      "text": "About Us"
+    },
+    {
+      "link": "/services",
+      "text": "Services"
+    },
+    {
+      "link": "/gallery",
+      "text": "Gallery"
+    },
+    {
+      "link": "/contact",
+      "text": "Contact Us"
+    }
+  ],
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    }
+  }
+}

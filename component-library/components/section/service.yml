@@ -1,0 +1,30 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Service Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  service:
+    - image: /images/home/service-1.png
+      image_alt: 
+      color: '#F9D1BF'
+      title: Nails Special
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  service[*]:
+    title: Nails Special
+      type: text
+    image:
+      type: image
+    image_alt:
+      type: text
+    color: 
+      type: color

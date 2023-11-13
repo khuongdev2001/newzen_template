@@ -1,0 +1,72 @@
+{
+  "logo": "/images/logo.png",
+  "contact": {
+    "label": "Contact us",
+    "info": [
+      {
+        "label": "11011 Richmond Ave, Ste 900, Houston, TX 77042",
+        "icon": "i-mdi-map-marker"
+      },
+      {
+        "label": "832-968-6668",
+        "icon": "i-mdi-phone"
+      },
+      {
+        "label": "contact@fastboy.net",
+        "icon": "i-mdi-email-outline"
+      }
+    ]
+  },
+  "follow": {
+    "label": "Follow Us:",
+    "info": [
+      {
+        "icon": "i-ri-facebook-fill",
+        "link": "https://www.facebook.com",
+        "active": true
+      },
+      {
+        "icon": "i-ri-twitter-fill",
+        "link": "https://www.facebook.com",
+        "active": true
+      },
+      {
+        "icon": "i-ri-linkedin-fill",
+        "link": "https://www.facebook.com",
+        "active": true
+      },
+      {
+        "icon": "i-ri-google-fill",
+        "link": "https://www.facebook.com",
+        "active": true
+      },
+      {
+        "icon": "i-ri-skype-fill",
+        "link": "https://www.facebook.com",
+        "active": false
+      },
+      {
+        "icon": "i-ri-youtube-fill",
+        "link": "https://www.facebook.com",
+        "active": false
+      }
+    ]
+  },
+  "location": {
+    "label": "Location: ",
+    "iframe": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.742269666924!2d-95.57572711181564!3d29.7272240108432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640ddc6ed681049%3A0x74ace03ed50728e8!2sFastboy%20Marketing%20%26%20Construction!5e0!3m2!1svi!2s!4v1698812946215!5m2!1svi!2s' width='600' height='350' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+  },
+  "image": {
+    "src": "/images/image-footer.png",
+    "alt": "Fastboy Marketing"
+  },
+  "copyright": "Fastboy Marketing",
+  "_inputs": {
+    "logo": {
+      "type": "image"
+    },
+    "label": {
+      "type": "text"
+    }
+  }
+}
